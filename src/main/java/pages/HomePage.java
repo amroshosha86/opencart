@@ -4,12 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends PageBase {
 
 	public HomePage(WebDriver driver) {
 		super(driver);
 		action=new Actions(driver);
+		
 
 	}
 
@@ -32,6 +34,7 @@ public class HomePage extends PageBase {
 	@FindBy(linkText ="Mac (1)")
 	WebElement macicon;
 	
+	
 
 	
 
@@ -50,6 +53,7 @@ public class HomePage extends PageBase {
 	{
 		myaccountlink.click();
 		logoutbtn.click();
+		
 	}
 	
 	public void openloginpage()

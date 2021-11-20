@@ -16,6 +16,12 @@ public class ProductDetailsPage extends PageBase {
 	@FindBy(css =".alert.alert-success.alert-dismissible")
 	public WebElement addcartsuccessmessage;
 	
+	@FindBy(css ="#cart")
+	 WebElement cartbtn;
+	@FindBy(linkText = "Checkout")
+	 WebElement checkout;
+	
+	
 	
 	
 	
@@ -26,6 +32,16 @@ public class ProductDetailsPage extends PageBase {
 		
 		
 	}
+	
+	public void opencartpage() throws InterruptedException
+	{
+		
+		cartbtn.click();
+		checkout.click();
+		
+		
+	}
+	
 	
 	
 	

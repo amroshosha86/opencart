@@ -30,7 +30,7 @@ public class TestBase {
 	// close browser
 	@AfterSuite
 	public void quitBrowser() {
-		driver.quit();
+		//driver.quit();
 		}
 
 }
