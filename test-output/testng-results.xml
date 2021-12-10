@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-20T09:05:00 EET" name="Default suite" finished-at="2021-11-20T09:05:04 EET" duration-ms="3338">
+  <suite started-at="2021-12-10T10:44:15 EET" name="Default suite" finished-at="2021-12-10T10:44:24 EET" duration-ms="9695">
     <groups>
     </groups>
-    <test started-at="2021-11-20T09:05:00 EET" name="Default test" finished-at="2021-11-20T09:05:04 EET" duration-ms="3338">
-      <class name="tests.AddToCartTest">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.AddToCartTest@6ddc817f]" started-at="2021-11-20T09:04:56 EET" name="startDriver" finished-at="2021-11-20T09:05:00 EET" duration-ms="4793" status="PASS">
+    <test started-at="2021-12-10T10:44:15 EET" name="Default test" finished-at="2021-12-10T10:44:24 EET" duration-ms="9695">
+      <class name="tests.AddShippingAddressTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.AddShippingAddressTest@153cf928]" started-at="2021-12-10T10:44:11 EET" name="startDriver" finished-at="2021-12-10T10:44:15 EET" duration-ms="3744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanAddToCart()[pri:1, instance:tests.AddToCartTest@6ddc817f]" started-at="2021-11-20T09:05:00 EET" name="UserCanAddToCart" finished-at="2021-11-20T09:05:04 EET" duration-ms="3307" status="PASS">
+        <test-method signature="UserCanReg()[pri:0, instance:tests.AddShippingAddressTest@153cf928]" started-at="2021-12-10T10:44:15 EET" name="UserCanReg" finished-at="2021-12-10T10:44:18 EET" duration-ms="3063" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanAddToCart -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.AddToCartTest@6ddc817f]" started-at="2021-11-20T09:05:04 EET" name="quitBrowser" finished-at="2021-11-20T09:05:04 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- UserCanReg -->
+        <test-method signature="UserCanAddAddress()[pri:1, instance:tests.AddShippingAddressTest@153cf928]" started-at="2021-12-10T10:44:18 EET" name="UserCanAddAddress" finished-at="2021-12-10T10:44:24 EET" duration-ms="6601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanAddAddress -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.AddShippingAddressTest@153cf928]" started-at="2021-12-10T10:44:25 EET" name="quitBrowser" finished-at="2021-12-10T10:44:25 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- tests.AddToCartTest -->
+      </class> <!-- tests.AddShippingAddressTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
