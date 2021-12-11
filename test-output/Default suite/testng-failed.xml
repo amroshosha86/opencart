@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.AddShippingAddressTest">
         <methods>
+          <include name="takescreenshot"/>
           <include name="startDriver"/>
           <include name="quitBrowser"/>
           <include name="UserCanAddAddress"/>

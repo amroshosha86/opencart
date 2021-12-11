@@ -34,7 +34,7 @@ public class AddressPage extends PageBase{
 	@FindBy(name="city")
 	WebElement citytextbox;
 
-	@FindBy(name="postcode")
+	@FindBy(name="postcode0")
 	WebElement postcodetextbox;
 
 

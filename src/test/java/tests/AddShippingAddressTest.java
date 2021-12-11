@@ -29,7 +29,7 @@ public class AddShippingAddressTest extends TestBase {
 	String companyname=fake.company().name();
 	String address=fake.address().fullAddress();
 	String city=fake.address().city();
-	String postcod="11115";
+	String postcod="111150";
 	
 	
 

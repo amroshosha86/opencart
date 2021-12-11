@@ -1,17 +1,24 @@
 package tests;
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
+import javax.imageio.ImageIO;
 import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
 import com.github.javafaker.Faker;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+
 
 public class TestBase {
 
 	public static WebDriver driver;
+	String path=System.getProperty("user.dir");
 	Faker fake=new Faker();
 	
 
@@ -27,10 +34,39 @@ public class TestBase {
 
 	}
 	
+	@AfterMethod 
+	public void takescreenshot(ITestResult result) throws IOException
+	{
+		if (ITestResult.FAILURE==result.getStatus()) 
+		{
+			try{
+			//add the Ashot dependency
+			//https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4
+			Screenshot screen = new AShot().takeScreenshot(driver);
+			ImageIO.write(screen.getImage(),"PNG",new File(path+"\\Screenshots\\"+result.getName()+".png"));
+
+			}
+			catch (Exception e)
+			{
+			System.out.println("Exception while taking screenshot "+e.getMessage());
+			} 
+			
+		}
+		
+		
+			
+			
+			 
+			
+			
+	}
+	
+
+	
 	// close browser
 	@AfterSuite
 	public void quitBrowser() {
-		//driver.quit();
+		driver.quit();
 		}
 
 }
