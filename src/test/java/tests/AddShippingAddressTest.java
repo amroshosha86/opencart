@@ -7,12 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.netty.util.Timeout;
 import pages.AddressPage;
 import pages.HomePage;
 import pages.RegsiterPage;
+import sharedmethod.SendEmail;
 
 public class AddShippingAddressTest extends TestBase {
 	HomePage homeobj;
@@ -30,8 +32,8 @@ public class AddShippingAddressTest extends TestBase {
 	String address=fake.address().fullAddress();
 	String city=fake.address().city();
 	String postcod="111150";
-	
-	
+
+
 
 	@Test(priority = 0)
 	public void UserCanReg()
@@ -49,7 +51,10 @@ public class AddShippingAddressTest extends TestBase {
 		AddressPageobj= new AddressPage(driver);
 		AddressPageobj.openaddnewaddresspage();
 		AddressPageobj.filladdressform(fname,lname,companyname,address,city,postcod);
-	
+		Assert.assertTrue(AddressPageobj.addresssuccessmessage.getText()
+		.contains("address has been successfully added"));
+		
+
 
 
 

@@ -1,6 +1,7 @@
 package tests;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
 import org.junit.AfterClass;
@@ -30,7 +31,7 @@ public class TestBase {
 		driver = new ChromeDriver(); 
 		driver.get("https://demo.opencart.com/index.php?route=common/home");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 	}
 	
@@ -40,7 +41,7 @@ public class TestBase {
 		if (ITestResult.FAILURE==result.getStatus()) 
 		{
 			try{
-			//add the Ashot dependency
+			//add the AShot dependency
 			//https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot/1.5.4
 			Screenshot screen = new AShot().takeScreenshot(driver);
 			ImageIO.write(screen.getImage(),"PNG",new File(path+"\\Screenshots\\"+result.getName()+".png"));

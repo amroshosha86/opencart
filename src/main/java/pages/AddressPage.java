@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -34,7 +35,7 @@ public class AddressPage extends PageBase{
 	@FindBy(name="city")
 	WebElement citytextbox;
 
-	@FindBy(name="postcode0")
+	@FindBy(name="postcode")
 	WebElement postcodetextbox;
 
 
@@ -44,6 +45,17 @@ public class AddressPage extends PageBase{
 
 	@FindBy(id = "input-zone")
 	 WebElement zoneddl;
+	
+	@FindBy(css ="input[value='Continue']")
+	 WebElement countinebtn;
+	
+	@FindBy(css =".alert.alert-success.alert-dismissible")
+	public  WebElement addresssuccessmessage;
+	
+	
+	
+	
+	
 
 
 	public void openaddnewaddresspage()
@@ -78,6 +90,18 @@ public class AddressPage extends PageBase{
 		Thread.sleep(2000);
 		select =new Select(zoneddl);
 		select.selectByVisibleText("Apac");
+		clickbutton(countinebtn);
+		
+
+	}
+	
+	public void testwaits()
+	{
+		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+	
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 
 	}
 }
