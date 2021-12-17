@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-17T07:59:50 EET" name="Default suite" finished-at="2021-12-17T08:00:01 EET" duration-ms="11107">
+  <suite started-at="2021-12-17T08:06:57 EET" name="Default suite" finished-at="2021-12-17T08:07:08 EET" duration-ms="10931">
     <groups>
     </groups>
-    <test started-at="2021-12-17T07:59:50 EET" name="Default test" finished-at="2021-12-17T08:00:01 EET" duration-ms="11107">
+    <test started-at="2021-12-17T08:06:57 EET" name="Default test" finished-at="2021-12-17T08:07:08 EET" duration-ms="10931">
       <class name="tests.AddShippingAddressTest">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T07:59:45 EET" name="startDriver" finished-at="2021-12-17T07:59:50 EET" duration-ms="4854" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:06:51 EET" name="startDriver" finished-at="2021-12-17T08:06:57 EET" duration-ms="5542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="UserCanReg()[pri:0, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T07:59:50 EET" name="UserCanReg" finished-at="2021-12-17T07:59:53 EET" duration-ms="3216" status="PASS">
+        <test-method signature="UserCanReg()[pri:0, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:06:57 EET" name="UserCanReg" finished-at="2021-12-17T08:07:00 EET" duration-ms="2976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanReg -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T07:59:53 EET" name="takescreenshot" finished-at="2021-12-17T07:59:53 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:07:00 EET" name="takescreenshot" finished-at="2021-12-17T08:07:00 EET" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanReg status=SUCCESS method=AddShippingAddressTest.UserCanReg()[pri:0, instance:tests.AddShippingAddressTest@19a544cd] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanReg status=SUCCESS method=AddShippingAddressTest.UserCanReg()[pri:0, instance:tests.AddShippingAddressTest@7ab8c972] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method signature="UserCanAddAddress()[pri:1, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T07:59:53 EET" name="UserCanAddAddress" finished-at="2021-12-17T08:00:01 EET" duration-ms="7857" status="PASS">
+        <test-method signature="UserCanAddAddress()[pri:1, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:07:00 EET" name="UserCanAddAddress" finished-at="2021-12-17T08:07:08 EET" duration-ms="7886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanAddAddress -->
-        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T08:00:01 EET" name="takescreenshot" finished-at="2021-12-17T08:00:01 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takescreenshot(org.testng.ITestResult)[pri:0, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:07:08 EET" name="takescreenshot" finished-at="2021-12-17T08:07:08 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanAddAddress status=SUCCESS method=AddShippingAddressTest.UserCanAddAddress()[pri:1, instance:tests.AddShippingAddressTest@19a544cd] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanAddAddress status=SUCCESS method=AddShippingAddressTest.UserCanAddAddress()[pri:1, instance:tests.AddShippingAddressTest@7ab8c972] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takescreenshot -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.AddShippingAddressTest@19a544cd]" started-at="2021-12-17T08:00:01 EET" name="quitBrowser" finished-at="2021-12-17T08:00:01 EET" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.AddShippingAddressTest@7ab8c972]" started-at="2021-12-17T08:07:08 EET" name="quitBrowser" finished-at="2021-12-17T08:07:08 EET" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
