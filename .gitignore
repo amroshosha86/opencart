@@ -1,4 +1,4 @@
-/test-output/*
-/target/*
+/opencart/test-output/
+/target/
 *.html
 *.xml
