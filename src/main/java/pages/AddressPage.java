@@ -90,17 +90,12 @@ public class AddressPage extends PageBase{
 		Thread.sleep(2000);
 		select =new Select(zoneddl);
 		select.selectByVisibleText("Apac");
-		clickbutton(countinebtn);
+		//clickbutton(countinebtn);
+		//click btn by java
+		js.executeScript("arguments[0].click();", countinebtn);
+		
 		
 
 	}
 	
-	public void testwaits()
-	{
-		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-
-	}
 }
