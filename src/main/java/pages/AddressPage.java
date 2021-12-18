@@ -99,7 +99,6 @@ public class AddressPage extends PageBase{
 	{
 		driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
