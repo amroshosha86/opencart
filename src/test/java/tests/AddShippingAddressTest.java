@@ -54,9 +54,6 @@ public class AddShippingAddressTest extends TestBase {
 		AddressPageobj.filladdressform(fname,lname,companyname,address,city,postcod);
 		Assert.assertTrue(AddressPageobj.addresssuccessmessage.getText()
 		.contains("address has been successfully added"));
-		
-
-
 
 
 	}
