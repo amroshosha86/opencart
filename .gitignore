@@ -2,3 +2,4 @@
 /target/
 *.html
 *.xml
+/test-output/
