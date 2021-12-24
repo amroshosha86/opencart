@@ -33,7 +33,7 @@ public class TestBase {
 		//System.getProperty("user.dir")+"\\Sources\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		//WebDriverManager.firefoxdriver().setup();
-		driver = new ChromeDriver(); 
+		 driver = new ChromeDriver();  
 		//driver = new FirefoxDriver(); 
 		driver.get("https://demo.opencart.com/index.php?route=common/home");
 		driver.manage().window().maximize();

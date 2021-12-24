@@ -3,6 +3,7 @@ package tests;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -44,6 +45,7 @@ public class AddShippingAddressTest extends TestBase {
 		homeobj.openMyAccountLink();
 		homeobj.openRegistrationPage();
 		regsiterobj.userRegForm(FirstName, LastName, email, phone, password);
+		
 
 	}
 	@Test(priority = 1)
